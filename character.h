@@ -5,13 +5,17 @@
 
 class Character{
 public:
-Character(std::string name) : name_(name) {}
+Character(std::string name, int strenght, int health) : name_(name), strenght_(strenght), health_(health) {}
 virtual ~Character(){}
 
 virtual void attack() const = 0; 
 
+virtual 
+
 protected:
 std::string name_ = "";
+int strenght_ = 0;
+int health_ = 0;
 };
 
 #endif
