@@ -8,7 +8,7 @@ public:
 Arquer(std::string name, int strenght, int health) : Character(name, strenght, health) {}
 virtual ~Arquer(){}
 
-void attack() const override;
+void attack(std::shared_ptr<Character> outro) const override;
 
 int setHealth() const override; 
 
