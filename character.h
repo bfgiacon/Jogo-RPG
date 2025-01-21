@@ -10,7 +10,7 @@ virtual ~Character(){}
 
 virtual void attack() const = 0; 
 
-virtual 
+virtual int setHealth() const = 0;
 
 protected:
 std::string name_ = "";
